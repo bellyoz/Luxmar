@@ -1,0 +1,95 @@
+<!-- top menu nav -->
+  <div id ="nav" class="navbar">
+  		<div class="title-bar" >
+	  <button class="menu-icon" type="button" data-toggle></button>
+	  <div class="title-bar-title">Menu</div>
+	</div>
+
+	<div class="top-bar" id="example-menu">
+	  <div class="top-bar-left">
+	    <%= link_to("Luxmar",'/')%>
+	  </div>
+	  <div class="top-bar-right">
+	    <ul class="menu">
+	    	<li><%= link_to("Inicio",'/')%></li>
+	      <li><%= link_to("Catalogo",'page/catalogo')%></li>
+	      <li><%= link_to("Acerca de",'page/about')%></li>
+	      <li><%= link_to("Contacto",'page/contact')%></li>
+	    </ul>
+	  </div>
+	</div>
+  </div>
+	
+<header>
+	<div class="header-wrap">
+		<div class="header-wrapper">
+			<h1>haz todos tus pedidos al por mayor</h1>
+			<%= link_to 'Cotizar ahora', 'page/contact', class: 'alert button' %>
+			
+		</div>
+	</div>
+</header>
+<!-- Description -->
+<div class="description-wrap">
+	<div class="description-wrap-inner">
+		<h3>Nosotros tenemos lo que usted necesita</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda minus, dolorem! Tenetur ab cum sit provident eius officia voluptatem est, veniam asperiores consequuntur quasi enim et obcaecati molestiae culpa sint!</p>
+		<%= link_to 'Catalogo', 'page/catalogo', class: 'catalogo button' %>
+	</div>
+</div>
+<!-- catalogo resumen -->
+<div class="catalogo-resume">
+	<div class="row no-gutter">
+		<div class="small-6 large-4 columns">
+			<div class="catalogo-product">
+				<%= image_tag("producto.jpg", :alt => "imgage") %>
+				<div class="text">
+					<h6>Agendas</h6>
+				</div>
+			</div>
+		</div>
+		<div class="small-6 large-4 columns">
+			<div class="catalogo-product">
+				<%= image_tag("producto.jpg", :alt => "imgage") %>
+				<div class="text">
+					<h6>Agendas</h6>
+				</div>
+			</div>
+		</div>
+		<div class="small-6 large-4 columns">
+			<div class="catalogo-product">
+				<%= image_tag("producto.jpg", :alt => "imgage") %>
+				<div class="text">
+					<h6>Agendas</h6>
+				</div>
+			</div>
+		</div>
+		<div class="small-6 large-4 columns">
+			<div class="catalogo-product">
+				<%= image_tag("producto.jpg", :alt => "imgage") %>
+				<div class="text">
+					<h6>Agendas</h6>
+				</div>
+			</div>
+		</div>
+		<div class="small-6 large-4 columns">
+			<div class="catalogo-product">
+				<%= image_tag("producto.jpg", :alt => "imgage") %>
+				<div class="text">
+					<h6>Agendas</h6>
+				</div>
+			</div>
+		</div>
+		<div class="small-6 large-4 columns">
+			<div class="catalogo-product">
+				<%= image_tag("producto.jpg", :alt => "imgage") %>
+				<div class="text">
+					<h6>Agendas</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--End catalogo resume-->
+
+	<%= render 'layouts/footuser'%>

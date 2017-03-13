@@ -1,0 +1,19 @@
+  <%= render 'layouts/headuser'%>
+  <!--Catalogo-->
+  <div class="catalogo-wrap">
+  	<h3>Nuestros Productos</h3>
+	<div class="row">
+		 <% @products.each do |product| %>
+		<div class="small-12 medium-6 large-4 columns">
+			<div class="catalogo-inner">
+				<%= image_tag("producto.jpg", :alt => "imgage") %>
+				<h6><%= product.title %></h6>
+				<p><%= product.description %></p>
+			</div>
+		</div>
+		<% end %>
+		
+	</div>
+  </div>
+  
+	<%= render 'layouts/footuser'%>
